@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering\small\setlength{\tabcolsep}{3pt}
+\caption{Finance (top; $n=50,100,300,700,1377$) and Airline (bottom; $n=100,300,1000,3000,8125$) learning curves, test accuracy (\%), mean$\pm$std over 3 seeds.}\label{tab:fin_air}
+\begin{tabular}{lccccc}
+\toprule
+Model & $n_1$ & $n_2$ & $n_3$ & $n_4$ & $n_5$ (full) \\
+\midrule
+TF-IDF + LogReg & 71.7$\pm$1.0 & 73.7$\pm$1.7 & 79.3$\pm$0.6 & 84.6$\pm$1.4 & 87.3$\pm$0.0 \\
+TF-IDF + NaiveBayes & 72.3$\pm$1.2 & 74.8$\pm$1.9 & 79.2$\pm$0.9 & 85.2$\pm$1.1 & 83.2$\pm$0.0 \\
+Tiny-BERT random init & 68.9$\pm$1.6 & 72.8$\pm$2.5 & 80.9$\pm$1.1 & 86.5$\pm$0.2 & 87.2$\pm$1.0 \\
+Tiny-BERT +MLM & 69.5$\pm$0.2 & 70.0$\pm$1.2 & 77.4$\pm$1.9 & 83.7$\pm$1.2 & 86.5$\pm$1.1 \\
+\midrule
+TF-IDF + LogReg & 83.5$\pm$1.5 & 85.9$\pm$0.3 & 88.1$\pm$0.3 & 90.1$\pm$0.1 & 92.0$\pm$0.0 \\
+TF-IDF + NaiveBayes & 84.1$\pm$1.2 & 84.7$\pm$0.4 & 86.1$\pm$0.2 & 87.6$\pm$0.1 & 89.2$\pm$0.0 \\
+Tiny-BERT random init & 84.4$\pm$1.0 & 85.5$\pm$0.4 & 88.1$\pm$0.8 & 90.9$\pm$0.4 & 91.6$\pm$0.2 \\
+Tiny-BERT +MLM & 82.6$\pm$0.5 & 83.7$\pm$0.9 & 87.1$\pm$0.3 & 89.6$\pm$0.3 & 91.5$\pm$0.5 \\
+\midrule
+\bottomrule
+\end{tabular}
+\end{table}

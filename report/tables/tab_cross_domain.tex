@@ -1,0 +1,37 @@
+\begin{table}[t]
+\centering\small
+\caption{Cross-domain transfer: full-data models evaluated on their own and the other two domains' test sets (single seed-0 run per cell unless otherwise noted).}\label{tab:cross}
+\resizebox{\linewidth}{!}{\begin{tabular}{llll}
+\toprule
+Model & Trained on & Tested on & Accuracy (\%) \\
+\midrule
+Tiny-BERT (+MLM pre-training) & SST-2 (movies) & SST-2 (movies) & 77.5 \\
+Tiny-BERT (+MLM pre-training) & SST-2 (movies) & Finance (news) & 51.8 \\
+Tiny-BERT (+MLM pre-training) & SST-2 (movies) & Airline (tweets) & 68.3 \\
+Tiny-BERT (+MLM pre-training) & Finance (news) & SST-2 (movies) & 54.1 \\
+Tiny-BERT (+MLM pre-training) & Finance (news) & Finance (news) & 86.5 \\
+Tiny-BERT (+MLM pre-training) & Finance (news) & Airline (tweets) & 47.2 \\
+Tiny-BERT (+MLM pre-training) & Airline (tweets) & SST-2 (movies) & 55.6 \\
+Tiny-BERT (+MLM pre-training) & Airline (tweets) & Finance (news) & 33.4 \\
+Tiny-BERT (+MLM pre-training) & Airline (tweets) & Airline (tweets) & 91.5 \\
+Tiny-BERT (random init) & SST-2 (movies) & SST-2 (movies) & 78.5 \\
+Tiny-BERT (random init) & SST-2 (movies) & Finance (news) & 52.3 \\
+Tiny-BERT (random init) & SST-2 (movies) & Airline (tweets) & 73.8 \\
+Tiny-BERT (random init) & Finance (news) & SST-2 (movies) & 53.0 \\
+Tiny-BERT (random init) & Finance (news) & Finance (news) & 87.2 \\
+Tiny-BERT (random init) & Finance (news) & Airline (tweets) & 35.6 \\
+Tiny-BERT (random init) & Airline (tweets) & SST-2 (movies) & 56.5 \\
+Tiny-BERT (random init) & Airline (tweets) & Finance (news) & 35.4 \\
+Tiny-BERT (random init) & Airline (tweets) & Airline (tweets) & 91.6 \\
+TF-IDF + LogReg & SST-2 (movies) & SST-2 (movies) & 81.3 \\
+TF-IDF + LogReg & SST-2 (movies) & Finance (news) & 62.7 \\
+TF-IDF + LogReg & SST-2 (movies) & Airline (tweets) & 75.3 \\
+TF-IDF + LogReg & Finance (news) & SST-2 (movies) & 52.2 \\
+TF-IDF + LogReg & Finance (news) & Finance (news) & 87.3 \\
+TF-IDF + LogReg & Finance (news) & Airline (tweets) & 26.8 \\
+TF-IDF + LogReg & Airline (tweets) & SST-2 (movies) & 53.0 \\
+TF-IDF + LogReg & Airline (tweets) & Finance (news) & 32.0 \\
+TF-IDF + LogReg & Airline (tweets) & Airline (tweets) & 92.0 \\
+\bottomrule
+\end{tabular}}
+\end{table}
